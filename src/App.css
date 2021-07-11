@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************ Fonts ************/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+/************ General Stuff************/
+body {
+  background-color: black;
+}
+img {
+  color: #fff;
+}
+
+.profile-image {
+  position: absolute;
+  border-radius: 5%;
+  box-shadow: #fff 1px 0 3px;
+  width: 30%;
+  height: auto;
+  left: 35%;
+  top: 10%;
+}
+.page-wrap {
+  padding: 1rem;
+  padding-top: 8rem;
+  position: relative;
+}
+.content-wrap {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/************ Logo ************/
+.logo {
+  position: absolute;
+  max-height: 3rem;
+  padding: 1.5rem;
+  top: 1rem;
+  left: 1rem;
+}
+
+/************ TextComponent ************/
+
+.text-container {
+  width: 20%;
+  height: auto;
+}
+.heading,
+.heading-two,
+.heading-three {
+  position: absolute;
+  transform: rotate(0);
+  color: white;
+  font-size: min(5rem, 8.5vw);
+  left: 24%;
+  top: 36%;
+  font-family: 'Viaoda Libre', cursive;
+  letter-spacing: 0.3rem;
+  transform: rotate(-1deg);
+}
+p {
+  width: 60%;
+  position: absolute;
+  text-align: left;
+  letter-spacing: 0.1rem;
+  line-height: 1.2rem;
+  font-size: 1.1rem;
+  color: white;
+}
+.heading {
+  font-size: 3rem;
+  top: 20%;
+  left: 10%;
+}
+.text {
+  top: 36.2%;
+  left: 10%;
+  width: 80%;
+  padding-bottom: 5rem;
+}
+.heading-two {
+  top: 55%;
+  left: 22%;
+}
+.text-two {
+  top: 70%;
+  width: 100%;
+  left: 0;
+  padding-bottom: 2rem;
+}
+
+/************ Home Navigation ************/
+
+.home-nav {
+  font-size: 0.7rem;
+  width: 100%;
+  height: 100%;
+}
+.home-nav a {
+  width: auto;
+  color: white;
+  text-align: center;
+  text-shadow: #fff 1px 0 6px;
+  font-size: 1.5em;
+  font-family: 'Satisfy', 'Roboto', serif;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  position: absolute;
+}
+.route-one,
+.route-two,
+.route-three {
+  z-index: 99999;
+}
+.route-one {
+  left: 0;
+  top: unset;
+  bottom: 15%;
+}
+.route-two {
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.route-three {
+  right: 0;
+  top: unset;
+  bottom: 15%;
+}
+
+/************ Navigation ************/
+
+.nav {
+  position: absolute;
+  top: 1rem;
+  right: 9rem;
+}
+.nav a {
+  font-size: 1.5em;
+  padding: 1.5em;
+}
+.active {
+  text-decoration-style: underline;
+}
+
+.back {
+  color: white;
+  font-family: 'Satisfy', 'Roboto', serif;
+  text-decoration: none;
+  position: absolute;
+  margin: 0 auto;
+}
+/************ Lines ************/
+
+.lines-wrap {
+  position: relative;
+  padding-top: 100%;
+}
+.lines {
+  position: absolute;
+  inset: 0;
+}
+.line-one,
+.line-two,
+.line-three {
+  position: absolute;
+  width: 45%;
+  border-bottom: 0.3rem solid white;
+  box-shadow: #fff 1px 0 10px;
+  border-radius: 50%;
+}
+.line-one {
+  top: 50%;
+  left: 12%;
+  transform: rotate(-45deg);
+}
+.line-two {
+  bottom: 34%;
+  width: 64%;
+  top: unset;
+  left: 50%;
+  transform: translateX(-50%) !important;
+}
+.line-three {
+  right: 12%;
+  top: 50%;
+  left: unset;
+  transform: rotate(45deg);
+}
+
+/************ Contact Form ************/
+
+.contact-form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 5.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: left;
+  color: white;
+  padding: 0.5em;
+}
+.contact-form input {
+  height: 2em;
+}
+.contact-form label {
+  font-family: 'Satisfy', 'Roboto', serif;
+  font-size: 1.5em;
+  padding: 0.4em;
+}
+.success-message {
+  color: white;
+  font-size: 1rem;
+}
+.message {
+  width: 100%;
+  height: 15em;
+}
+
+.submit {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2%;
+  font-family: 'Satisfy', 'Roboto', serif;
+  font-size: 1.4em;
+  background-color: aqua;
+}
+.heading-three {
+  color: white;
+  font-size: 3rem;
+  top: 1rem;
+  left: 55%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+/************ Media Queries ************/
+
+@media (min-width: 640px) {
+  .logo {
+    max-height: 6rem;
+    padding: 1rem;
+    top: 1rem;
+    left: 1rem;
+  }
+  .profile-image {
+    left: 0;
+    top: 10%;
+  }
+  .nav {
+    top: 1rem;
+    right: 10rem;
+  }
+  .home-nav {
+    font-size: 1rem;
+  }
+  .route-one {
+    left: 4%;
+    bottom: 31.5%;
+  }
+  .route-two {
+    top: 30%;
+  }
+  .route-three {
+    bottom: 31.5%;
+    right: 4%;
+  }
+  .heading {
+    left: 23%;
+    top: 20%;
+    transform: rotate(0deg);
+  }
+  .text {
+    left: 15%;
+    right: 10%;
+    top: 32%;
+    width: 70%;
+  }
+  .text-two {
+    width: 60%;
+    left: 22%;
+  }
+  .heading-three {
+    top: 24%;
+    font-size: 5rem;
+  }
+  .contact-form {
+    top: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-wrap {
+    padding-top: 1rem;
+  }
+  body {
+    background-color: black;
+  }
+  .profile-image {
+    width: 18%;
+  }
+  .logo {
+    max-height: 8rem;
+    padding: 1rem;
+    top: 1rem;
+    left: 1rem;
+  }
+  .profile-image {
+    left: -1%;
+    top: 30%;
+  }
+  .nav {
+    top: 1rem;
+    right: 10rem;
+  }
+  .route-one {
+    left: 6%;
+    bottom: 31%;
+  }
+  .route-two {
+    top: 30%;
+  }
+  .route-three {
+    bottom: 31%;
+    right: 6%;
+  }
+  .heading {
+    font-size: min(5rem, 8.5vw);
+    left: 23%;
+    top: 22%;
+    transform: rotate(0deg);
+  }
+  .text {
+    left: 23%;
+    top: 37%;
+    width: 54%;
+  }
+  .heading-two {
+    left: 22%;
+    top: 25%;
+    transform: rotate(0deg);
+  }
+  .text-two {
+    font-size: 1rem;
+    left: 23%;
+    top: 36%;
+    width: 58%;
+  }
+  .contact-form {
+    top: 40%;
+    left: 31%;
+    width: 45%;
+    transform: none;
+  }
+}
+@media (max-width: 900px) {
+  .line-one,
+  .line-two,
+  .line-three {
+    display: none !important;
+  }
+  .route-one {
+    left: 0;
+    right: 0;
+    top: 35%;
+  }
+  .route-two {
+    top: 50%;
+  }
+  .route-three {
+    top: 65%;
+    left: 0;
+    right: 0;
+  }
+}
